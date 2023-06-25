@@ -840,6 +840,14 @@ nav {
   background: #2CA242;
 }
 
+.steam-slider {
+  position: relative;
+  top: 100px;
+  background: #1B2838;
+  padding-bottom: 200px;
+  margin-bottom: 100px;
+}
+
 .swiper__games-5 {
   padding: 100px 0;
 }
@@ -996,6 +1004,55 @@ nav {
   background: #fff;
 }
 
+.footer {
+  background: #1F242A;
+  -webkit-box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.25);
+  padding: 80px 0;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px 40px;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__item-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__logo {
+  position: relative;
+  right: -20px;
+  top: -20px;
+  margin-left: auto;
+}
+
+.footer__item-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: auto;
+}
+
 @media (max-width: 1690px) {
   .xbox-slider {
     top: -130px;
@@ -1145,6 +1202,20 @@ nav {
 
   .ps5-slider {
     top: -80px;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__logo {
+    margin-left: 0;
+    right: auto;
+    left: -20px;
+  }
+
+  .footer__item-desc {
+    margin-left: 0;
   }
 }
 
@@ -1428,6 +1499,12 @@ nav {
     bottom: 0px;
   }
 
+  .steam-slider {
+    top: 0;
+    padding-bottom: 150px;
+    margin-bottom: 0;
+  }
+
   .swiper__games-5 {
     padding: 50px 0 160px;
   }
@@ -1526,6 +1603,19 @@ nav {
 
   .swiper__item-name {
     padding: 20px 0;
+    font-size: 20px;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+
+  .footer__item {
+    gap: 20px;
+  }
+
+  .footer__item-link {
     font-size: 20px;
   }
 }
