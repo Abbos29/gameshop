@@ -70,7 +70,7 @@ window.addEventListener('scroll', fixedNav)
 
 // SWIPER
 
-const swiperGame5 = new Swiper('.swiper__games-5', {
+const swiperGame1 = new Swiper('.swiper__games-1', {
   
   pagination: {
     el: '.swiper-pagination',
@@ -94,6 +94,34 @@ const swiperGame5 = new Swiper('.swiper__games-5', {
     },
     992: {
       slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
+
+
+const swiperGame2 = new Swiper('.swiper__games-2', {
+  
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  initialSlide: 1,
+  centeredSlides: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  
+  breakpoints: {
+    1450: {
+      slidesPerView: 2.1,
     },
     768: {
       slidesPerView: 2,

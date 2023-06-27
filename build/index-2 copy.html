@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gameshop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gameshop 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;800&family=Poppins:wght@400;500;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+    
+<!-- Header -->
+<header class="header">
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link active" data-scroll>АКЦИИ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>ИГРЫ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О НАС</a></li>
+                </ul>
+
+                <div class="navbar__inner">
+                    <a class="navbar__dollar" href="#">
+                        <img src="./img/$.svg" alt="dollar">
+                    </a>
+                    <select class="navbar__select" name="lang" id="select-lang">
+                        <option value="PL">
+                            <img src="./img/flag-1.png" alt="flag">
+                            PL
+                        </option>
+                        <option value="RU">
+                            
+                            RU
+                        </option>
+                        <option value="EN">
+                            
+                            EN
+                        </option>
+                    </select>
+                </div>
+
+                <div class="navbar__inner navbar__inner-2">
+                    <a class="navbar__account" href="#">
+                        <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.8663 30.9143V27.6759C28.8663 25.9582 28.1587 24.3108 26.8991 23.0962C25.6395 21.8816 23.9311 21.1992 22.1498 21.1992H8.71659C6.93524 21.1992 5.22685 21.8816 3.96724 23.0962C2.70764 24.3108 2 25.9582 2 27.6759V30.9143" stroke="#959DAE" stroke-width="2.16913" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.4334 14.721C19.1428 14.721 22.15 11.8213 22.15 8.24429C22.15 4.6673 19.1428 1.76758 15.4334 1.76758C11.7239 1.76758 8.7168 4.6673 8.7168 8.24429C8.7168 11.8213 11.7239 14.721 15.4334 14.721Z" stroke="#959DAE" stroke-width="2.16913" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a class="navbar__cart" href="#">
+                        <svg width="31" height="35" viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.693 10.985V7.89375C22.693 6.93048 22.5032 5.97665 22.1346 5.08671C21.766 4.19676 21.2257 3.38814 20.5446 2.70701C19.8634 2.02588 19.0548 1.48558 18.1649 1.11695C17.2749 0.748323 16.3211 0.558594 15.3578 0.558594C14.3945 0.558594 13.4407 0.748323 12.5508 1.11695C11.6608 1.48558 10.8522 2.02588 10.1711 2.70701C9.48994 3.38814 8.94964 4.19676 8.58101 5.08671C8.21239 5.97665 8.02266 6.93048 8.02266 7.89375V15.2289C8.02266 15.5068 8.13306 15.7734 8.32957 15.9699C8.52609 16.1664 8.79262 16.2768 9.07054 16.2768C9.34845 16.2768 9.61498 16.1664 9.8115 15.9699C10.008 15.7734 10.1184 15.5068 10.1184 15.2289V13.0808H18.5015V10.985H10.1184V7.89375C10.1184 6.50418 10.6704 5.17151 11.653 4.18894C12.6356 3.20636 13.9682 2.65435 15.3578 2.65435C16.7474 2.65435 18.0801 3.20636 19.0626 4.18894C20.0452 5.17151 20.5972 6.50418 20.5972 7.89375V15.1765C20.5972 15.4544 20.7076 15.721 20.9041 15.9175C21.1006 16.114 21.3672 16.2244 21.6451 16.2244C21.923 16.2244 22.1895 16.114 22.3861 15.9175C22.5826 15.721 22.693 15.4544 22.693 15.1765V13.0808H27.9324V31.9426H2.78326V13.0808H5.9269V10.985H0.6875V32.0369C0.6875 32.5677 0.898366 33.0768 1.27371 33.4521C1.64906 33.8275 2.15813 34.0383 2.68895 34.0383H28.0267C28.5575 34.0383 29.0666 33.8275 29.4419 33.4521C29.8173 33.0768 30.0281 32.5677 30.0281 32.0369V10.985H22.693Z" fill="#959DAE"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Page -->
+<main class="index-1">
+
+<!-- Hero-1 -->
+<section class="hero-1">
+    <div class="container-fluid">
+        <div class="hero-1__wrapper">
+            <p class="hero-1__pretitle">КОЛЛЕКЦИЯ</p>
+            <p class="hero-1__title">НА ЛЮБОЙ ВКУС</p>
+
+            <div class="hero-1__inner">
+                <div class="hero-1__how">
+                    <a class="hero-1__how-btn" href="#">КАК ЭТО РАБОТАЕТ?</a>
+                    <div class="hero-1__how-icon">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6531 0.0829067C18.2627 0.22407 16.493 0.600505 14.9509 1.09458C13.5478 1.55336 11.1335 2.57679 11.0071 2.77677C10.9439 2.87088 11.2978 2.90617 12.2838 2.90617C14.4832 2.90617 16.7964 3.54141 20.3231 5.10597L22.3203 6L24.1152 5.2236C27.8568 3.60022 29.8666 3.04734 32.3567 2.91794L34 2.83559L32.5464 2.16506C30.8273 1.3769 28.5773 0.659323 26.7318 0.318179C25.2149 0.0240884 21.486 -0.0935473 19.6531 0.0829067Z" fill="#23AE49"/>
+                            <path d="M7.01984 6.19626C6.03897 6.84211 4.05108 9.40015 2.86096 11.5276C0.559194 15.656 -0.473987 21.0253 0.206081 25.3309C0.794602 29.0287 1.85394 31.9286 3.63258 34.702C4.74423 36.4369 4.66576 36.4369 4.66576 34.6766C4.67884 32.8784 4.99272 31.5867 5.99974 29.1933C7.85685 24.7737 12.2904 17.8088 16.2662 13.0726C16.6977 12.566 17.0247 12.1102 16.9985 12.0468C16.9331 11.8442 13.7421 9.13421 12.6173 8.32374C9.94937 6.37355 7.92224 5.60108 7.01984 6.19626Z" fill="#23AE49"/>
+                            <path d="M36.295 6.24423C34.4633 6.87688 32.4354 8.23076 29.6485 10.6601L28 12.1026L28.5888 12.8112C33.312 18.5051 37.9305 25.9324 39.6183 30.5508C40.2201 32.2336 40.4818 33.5116 40.4818 34.8908C40.4818 35.8904 40.508 36.0928 40.6388 35.9663C41.0575 35.5614 42.8368 32.3981 43.3078 31.2214C44.0929 29.2855 44.7078 26.9953 44.891 25.2871C45.1134 23.212 44.9826 19.7577 44.6162 18.0369C43.7134 13.7602 41.5546 9.6479 38.7286 6.86423C37.7473 5.88994 37.4987 5.82667 36.295 6.24423Z" fill="#23AE49"/>
+                            <path d="M21.6856 18.5504C18.9688 20.6142 13.7732 25.9301 11.1065 29.3823C8.62756 32.5969 7.01252 35.849 7 37.6376C7 38.9134 7.60095 39.6514 9.87953 41.1774C14.2364 44.0667 19.3695 45.3801 24.4024 44.9048C27.645 44.5796 29.861 43.9667 32.4901 42.6408C35.6576 41.0523 37.6232 39.5013 37.9236 38.3881C38.3994 36.637 36.6216 32.8595 33.4416 28.8194C30.8876 25.5799 23.238 18 22.5119 18C22.4618 18 22.0988 18.2502 21.6856 18.5504Z" fill="#23AE49"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <a class="hero-1__btn" href="#">
+                    <img src="./img/arrow-btn.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New-1 -->
+<section class="new new-1">
+    <div class="container-fluid">
+        <p class="new__title section-title">НОВИНКИ</p>
+
+        <div class="new__wrapper">
+            <!-- Slider-2 -->
+            <div class="swiper swiper-2 swiper__games-2">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-2__btns">
+        <div class="swiper-button-prev">
+            <img src="./img/arrow-prev.png" alt="arrow">
+        </div>
+        <div class="swiper-button-next">
+            <img src="./img/arrow-next.png" alt="arrow">
+        </div>
+    </div>
+
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular-1 -->
+<section class="new popular popular-1">
+    <div class="container-fluid">
+        <p class="new__title section-title">ПОПУЛЯРНОЕ</p>
+
+        <div class="new__wrapper">
+            <!-- Slider-2 -->
+            <div class="swiper swiper-2 swiper__games-2">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper-2__item">
+
+                <div class="swiper-2__item-inner">
+                    <img class="swiper-2__item-icon" src="./img/game-1-icon.png" alt="icon">
+                    <p class="swiper-2__item-name">STAR WARS Jedi: Fallen Order Deluxe Edition</p>
+                    <p class="swiper-2__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis eget sit enim commodo faucibus.</p>
+                    <p class="swiper-2__item-price">259.99 zł</p>
+                    <a class="swiper-2__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-2__btns">
+        <div class="swiper-button-prev">
+            <img src="./img/arrow-prev.png" alt="arrow">
+        </div>
+        <div class="swiper-button-next">
+            <img src="./img/arrow-next.png" alt="arrow">
+        </div>
+    </div>
+
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- Games-1 -->
+<section class="new games games-1">
+    <div class="container-fluid">
+        <p class="games__title section-title">ВСЕ ИГРЫ</p>
+
+        
+        <div class="new__wrapper">
+            <div class="games__search">
+                <input type="text" placeholder="Поиск...">
+    
+            </div>
+            <!-- Slider -->
+            <div class="swiper swiper__games-1">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <div class="swiper__item-discont">
+                        <span class="swiper__item-discont-text">-50%</span>
+                    </div>
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <div class="swiper__item-discont">
+                        <span class="swiper__item-discont-text">-50%</span>
+                    </div>
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <div class="swiper__item-discont">
+                        <span class="swiper__item-discont-text">-50%</span>
+                    </div>
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="swiper__item">
+                
+                <div class="swiper__item-img">
+                    <div class="swiper__item-discont">
+                        <span class="swiper__item-discont-text">-50%</span>
+                    </div>
+                    <img src="./img/game-1.jpg" alt="game-img">
+                    <p class="swiper__item-price">30.99 $</p>
+                </div>
+                
+
+                <div class="swiper__item-inner">
+                    <p class="swiper__item-name">Marvels spider man miles moraler</p>
+                    <a class="swiper__item-btn btn" href="#">buy</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper__btns">
+        <div class="swiper-button-prev">
+            <img src="./img/arrow-prev.png" alt="arrow">
+        </div>
+        <div class="swiper-button-next">
+            <img src="./img/arrow-next.png" alt="arrow">
+        </div>
+    </div>
+
+</div>
+
+            <a class="games__btn btn" href="#">показать больше</a>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">FAQ</a>
+                <a class="footer__item-link link" href="#">Rules</a>
+                <a class="footer__item-link link" href="#">Payments</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">SUPPORT</a>
+                <a class="footer__item-link link" href="#">SITEMAP</a>
+                <a class="footer__item-link link" href="#">LEGAL</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">INSTAGRAM</a>
+                <a class="footer__item-link link" href="#">YOUTUBE</a>
+                <a class="footer__item-link link" href="#">ANDROID APP</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__logo logo" href="#">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <p class="footer__item-desc">2023</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>
