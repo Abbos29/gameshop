@@ -150,7 +150,7 @@ h6 {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -168,7 +168,7 @@ section {
 
 .section-title-big {
   font-family: "Neue Machina", sans-serif;
-  font-size: 110px;
+  font-size: 70px;
   line-height: 1.1;
   color: #fff;
   text-align: center;
@@ -177,7 +177,7 @@ section {
 .section-title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 46px;
+  font-size: 36px;
   color: #0D0D0D;
   text-transform: uppercase;
 }
@@ -185,7 +185,7 @@ section {
 .btn {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   color: #fff;
   width: auto;
   display: -webkit-box;
@@ -198,7 +198,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 70px;
+  padding: 20px 60px;
   border-radius: 15px;
   background: -o-linear-gradient(129deg, #F00073 0%, #FF439D 100%);
   background: linear-gradient(321deg, #F00073 0%, #FF439D 100%);
@@ -218,6 +218,7 @@ section {
   width: 140px;
   height: 140px;
   border-radius: 50%;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +357,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 10px 0;
   gap: 20px;
 }
 
@@ -400,7 +400,7 @@ nav {
 }
 
 .navbar__select {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar__cart {
@@ -452,7 +452,7 @@ nav {
 
 .menu__item-link {
   color: #959DAE;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 1.1;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -478,7 +478,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 90px;
+  padding-top: 70px;
   color: #fff;
 }
 
@@ -489,7 +489,7 @@ nav {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  gap: 50px;
+  gap: 35px;
 }
 
 .hero__content {
@@ -510,22 +510,22 @@ nav {
 .hero__title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 80px;
-  margin-bottom: 24px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .hero__name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   color: #54F88B;
 }
 
 .hero__desc {
   font-family: "Montserrat", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 1.2;
-  margin: 20px 0 37px;
+  margin: 15px 0 20px;
 }
 
 .hero__box {
@@ -611,11 +611,11 @@ nav {
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 40px;
+  gap: 30px 30px;
 }
 
 .about__item {
-  padding: 60px 70px;
+  padding: 30px 40px;
   border-radius: 50px;
   -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.2);
@@ -661,20 +661,20 @@ nav {
   -webkit-background-clip: text;
   /* Для поддержки в Safari и Chrome */
   color: transparent;
-  padding: 0 0 90px;
+  padding: 0 0 50px;
 }
 
 .about__item-title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 800;
-  font-size: 34px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #fff;
 }
 
 .about__item-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .box__item {
@@ -706,11 +706,11 @@ nav {
   max-width: 550px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  padding: 40px 0 0;
+  padding: 20px 0 0;
 }
 
 .box__item-btn {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .box__item-img img {
@@ -741,7 +741,7 @@ nav {
   max-width: 100%;
   width: 100%;
   position: absolute;
-  bottom: -150px;
+  bottom: -200px;
   overflow: hidden;
 }
 
@@ -810,7 +810,7 @@ nav {
 }
 
 .swiper__games-1 {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .swiper__item {
@@ -826,7 +826,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 18px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,7 +845,7 @@ nav {
 .swiper__item-discont-text {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 23px;
   text-transform: lowercase;
 }
 
@@ -892,18 +892,19 @@ nav {
 
 .swiper__item-name {
   text-align: center;
-  padding: 30px 0 40px;
+  padding: 20px 0 25px;
   max-width: 290px;
   width: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 21px;
   color: #23292F;
   text-transform: uppercase;
 }
 
 .swiper__item-btn {
+  padding: 10px 50px;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -974,7 +975,7 @@ nav {
 }
 
 .ps5-slider__img {
-  max-width: 380px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -998,7 +999,7 @@ nav {
   position: relative;
   top: 100px;
   background: #1B2838;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   margin-bottom: 100px;
 }
 
@@ -1490,13 +1491,13 @@ nav {
   background: #1F242A;
   -webkit-box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.25);
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px 40px;
+  gap: 40px 30px;
 }
 
 .footer__item {
@@ -1515,7 +1516,7 @@ nav {
 
 .footer__item-link {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -1543,7 +1544,7 @@ nav {
 
 @media (max-width: 1449.98px) {
   .box-2__bg {
-    bottom: -90px;
+    bottom: -200px;
   }
 
   .box-3 .box__item {
@@ -1555,7 +1556,7 @@ nav {
     -webkit-transform: scaleX(1.2);
         -ms-transform: scaleX(1.2);
             transform: scaleX(1.2);
-    top: -70px;
+    top: -20px;
     overflow: hidden;
   }
 
@@ -1564,7 +1565,7 @@ nav {
   }
 
   .ps5-slider {
-    top: -120px;
+    top: -90px;
   }
 
   .swiper-2__item {
@@ -1588,15 +1589,15 @@ nav {
 
 @media (max-width: 991.98px) {
   section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .section-title-big {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .section-title {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .btn-second {
@@ -1631,7 +1632,7 @@ nav {
   }
 
   .about__item {
-    padding: 40px;
+    padding: 30px;
   }
 
   .about__item:nth-child(6) .about__item-title {
@@ -1643,7 +1644,7 @@ nav {
   }
 
   .about__item-title {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   .about__item-text {
@@ -1652,11 +1653,11 @@ nav {
 
   .box__item-text {
     font-size: 20px;
-    padding: 30px 0 0;
+    padding: 15px 0 0;
   }
 
   .box__item-btn {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   .box-2 .box__item-content {
@@ -1877,17 +1878,17 @@ nav {
   }
 
   .hero__title {
-    font-size: 70px;
-    margin-bottom: 12px;
+    font-size: 50px;
+    margin-bottom: 10px;
   }
 
   .hero__name {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .hero__desc {
-    font-size: 21px;
-    margin: 18px 0 30px;
+    font-size: 18px;
+    margin: 10px 0 15px;
   }
 
   .hero__img img {
@@ -1899,7 +1900,7 @@ nav {
   }
 
   .about__title {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .box__item {
@@ -2003,7 +2004,7 @@ nav {
   }
 
   .swiper__games-1 {
-    padding: 50px 0 160px;
+    padding: 30px 0 160px;
   }
 
   .swiper__btns {
@@ -2019,7 +2020,7 @@ nav {
 
   .steam-slider {
     top: 0;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     margin-bottom: 0;
   }
 
@@ -2116,11 +2117,11 @@ nav {
 
 @media (max-width: 479.98px) {
   section {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .section-title {
-    font-size: 38px;
+    font-size: 28px;
   }
 
   .btn-second {
@@ -2139,16 +2140,16 @@ nav {
   }
 
   .about__item {
-    padding: 30px;
+    padding: 25px;
     border-radius: 30px;
   }
 
   .about__title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .about__item-title {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .box__item {
@@ -2157,13 +2158,13 @@ nav {
 
   .box__item-text {
     font-size: 18px;
-    padding: 20px 0 0;
+    padding: 15px 0 0;
   }
 
   .box__item-btn {
     max-width: 100%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .box-1 .box__item-img img {
@@ -2179,11 +2180,11 @@ nav {
   }
 
   .swiper__item-discont {
-    padding: 12px;
+    padding: 10px;
   }
 
   .swiper__item-discont-text {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .swiper__item-name {

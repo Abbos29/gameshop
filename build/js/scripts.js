@@ -89,11 +89,11 @@ const swiperGame1 = new Swiper('.swiper__games-1', {
   
   breakpoints: {
     1450: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 30,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
     768: {
       slidesPerView: 2,
