@@ -40,20 +40,30 @@
                     <a class="navbar__dollar" href="#">
                         <img src="./img/$.svg" alt="dollar">
                     </a>
-                    <select class="navbar__select" name="lang" id="select-lang">
-                        <option value="PL">
-                            <img src="./img/flag-1.png" alt="flag">
-                            PL
-                        </option>
-                        <option value="RU">
+                    
+                    <div class="dropdown">
+                        <button class="dropdown__btn">Кнопка</button>
+                        
+                        <div class="dropdown__body">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                RU
+                            </button>
                             
-                            RU
-                        </option>
-                        <option value="EN">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                EN
+                            </button>
                             
-                            EN
-                        </option>
-                    </select>
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                PL
+                            </button>
+                            
+                        </div>
+                    </div>
+                    
+
                 </div>
 
                 <div class="navbar__inner navbar__inner-2">
