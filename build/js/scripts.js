@@ -81,9 +81,9 @@ const swiperGame1 = new Swiper('.swiper__games-1', {
     prevEl: '.swiper-button-prev',
   },
 
-  initialSlide: 3,
-  centeredSlides: true,
-  grabCursor: true,
+  // initialSlide: 3,
+  // centeredSlides: true,
+  // grabCursor: true,
   slidesPerView: 1,
   spaceBetween: 20,
   
@@ -93,9 +93,12 @@ const swiperGame1 = new Swiper('.swiper__games-1', {
       spaceBetween: 30,
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
     768: {
+      slidesPerView: 3,
+    },
+    480: {
       slidesPerView: 2,
     }
   }

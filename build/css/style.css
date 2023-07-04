@@ -168,7 +168,7 @@ section {
 
 .section-title-big {
   font-family: "Neue Machina", sans-serif;
-  font-size: 70px;
+  font-size: 55px;
   line-height: 1.1;
   color: #fff;
   text-align: center;
@@ -177,7 +177,7 @@ section {
 .section-title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   color: #0D0D0D;
   text-transform: uppercase;
 }
@@ -215,10 +215,10 @@ section {
 }
 
 .btn-second {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +235,7 @@ section {
 }
 
 .btn-second img {
-  max-width: 40px;
+  max-width: 30px;
   width: 100%;
 }
 
@@ -338,7 +338,7 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 14px;
   padding: 0px;
   background: transparent;
   color: #959DAE;
@@ -352,7 +352,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   position: absolute;
   z-index: 5;
-  top: 80px;
+  top: 60px;
   padding: 0px;
   border-radius: 6px;
   border: 1px solid #89898D;
@@ -410,6 +410,7 @@ header.active {
 nav {
   background: #1F242A;
   overflow: hidden;
+  padding: 5px 0;
   z-index: 3;
   -webkit-box-shadow: 5px 5px 30px 8px rgba(0, 255, 52, 0.2);
           box-shadow: 5px 5px 30px 8px rgba(0, 255, 52, 0.2);
@@ -468,22 +469,46 @@ nav {
   margin-right: 30px;
 }
 
+.navbar__dollar {
+  width: 30px;
+}
+
+.navbar__dollar img {
+  max-width: 100%;
+  width: 100%;
+}
+
 .navbar__select {
   font-size: 18px;
 }
 
+.navbar__account {
+  width: 25px;
+}
+
+.navbar__account img {
+  max-width: 100%;
+  width: 100%;
+}
+
 .navbar__cart {
   position: relative;
+  width: 25px;
+}
+
+.navbar__cart img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .navbar__cart::after {
   content: "3";
   position: absolute;
-  top: -18px;
-  right: -18px;
+  top: -13px;
+  right: -13px;
   color: #fff;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +522,7 @@ nav {
   background: #01D560;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .logo a {
@@ -507,7 +532,7 @@ nav {
 .logo a img {
   position: relative;
   left: -15px;
-  max-width: 100%;
+  max-width: 70px;
   width: 100%;
 }
 
@@ -521,7 +546,7 @@ nav {
 
 .menu__item-link {
   color: #959DAE;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.1;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -579,22 +604,22 @@ nav {
 .hero__title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 60px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .hero__name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px;
   color: #54F88B;
 }
 
 .hero__desc {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
-  margin: 15px 0 20px;
+  margin: 12px 0 17px;
 }
 
 .hero__box {
@@ -620,14 +645,14 @@ nav {
 .hero__old-price {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__price {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .hero__rank img {
@@ -636,7 +661,7 @@ nav {
 }
 
 .hero__btn {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .hero__img img {
@@ -730,13 +755,13 @@ nav {
   -webkit-background-clip: text;
   /* Для поддержки в Safari и Chrome */
   color: transparent;
-  padding: 0 0 50px;
+  padding: 0 0 40px;
 }
 
 .about__item-title {
   font-family: "Neue Machina", sans-serif;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -774,12 +799,12 @@ nav {
 .box__item-text {
   max-width: 550px;
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0 0;
 }
 
 .box__item-btn {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .box__item-img img {
@@ -895,7 +920,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,7 +939,7 @@ nav {
 .swiper__item-discont-text {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 21px;
   text-transform: lowercase;
 }
 
@@ -961,13 +986,13 @@ nav {
 
 .swiper__item-name {
   text-align: center;
-  padding: 20px 0 25px;
+  padding: 10px 0 15px;
   max-width: 290px;
   width: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 21px;
+  font-weight: 600;
+  font-size: 18px;
   color: #23292F;
   text-transform: uppercase;
 }
@@ -1564,6 +1589,7 @@ nav {
 }
 
 .footer__wrapper {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px 30px;
@@ -1577,7 +1603,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 35px;
+  gap: 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1585,7 +1611,7 @@ nav {
 
 .footer__item-link {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -1662,7 +1688,7 @@ nav {
   }
 
   .section-title-big {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .section-title {
@@ -1709,11 +1735,11 @@ nav {
   }
 
   .about__title {
-    padding: 0 0 40px;
+    padding: 0 0 30px;
   }
 
   .about__item-title {
-    font-size: 27px;
+    font-size: 23px;
   }
 
   .about__item-text {
@@ -1947,7 +1973,7 @@ nav {
   }
 
   .hero__title {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
 
@@ -2249,7 +2275,7 @@ nav {
   }
 
   .swiper__item-discont {
-    padding: 10px;
+    padding: 6px;
   }
 
   .swiper__item-discont-text {
