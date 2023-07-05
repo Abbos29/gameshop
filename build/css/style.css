@@ -1939,6 +1939,14 @@ nav {
     padding: 0 15px;
   }
 
+  .box-1__bg,
+  .box-2__bg,
+  .box-3__bg,
+  .box-4__bg,
+  .ps5-slider__bg {
+    display: none;
+  }
+
   .navbar {
     padding: 0;
   }
