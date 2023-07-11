@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gameshop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Корзина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;800&family=Poppins:wght@400;500;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+    
+<!-- Header -->
+<header class="header">
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link active" data-scroll>АКЦИИ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>ИГРЫ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О НАС</a></li>
+                </ul>
+
+                <div class="navbar__inner">
+                    <a class="navbar__dollar" href="#">
+                        <img src="./img/$.svg" alt="dollar">
+                    </a>
+                    
+                    <div class="dropdown">
+                        <button class="dropdown__btn">Кнопка</button>
+                        
+                        <div class="dropdown__body">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                RU
+                            </button>
+                            
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                EN
+                            </button>
+                            
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/flag-1.png" alt="flag">
+                                PL
+                            </button>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navbar__inner navbar__inner-2">
+                    <a class="navbar__account" href="#">
+                        
+                        <img src="./img/account.png" alt="img">
+                    </a>
+                    <a class="navbar__cart" href="#">
+                        
+                        <img src="./img/cart.png" alt="img">
+                    </a>
+                </div>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Page -->
+<main>
+
+<!-- Cart -->
+<section class="cart">
+    <div class="container">
+        <div class="cart__wrapper">
+            <div class="cart__list">
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart__list-item">
+                        <p class="cart__list-name">Borderlands 3</p>
+                        <p class="cart__list-text">It’s arsenal of fun is unmatched</p>
+                        <img class="cart__list-icon" src="./img/cart-ps5.jpg" alt="cart">
+                        <p class="cart__list-oldprice">14$</p>
+                        <p class="cart__list-price">12$</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="cart__item">
+                <p class="cart__item-title">ВАША КОРЗИНА</p>
+                <p class="cart__item-price">Сумма: <span>458 zł</span></p>
+                <div class="cart__item-inner">
+                    <p class="cart__item-price">Итоговая сумма: <span>458 zł</span></p>
+                    <img class="cart__item-visa" src="./img/visa-mir.jpg" alt="visa">
+                </div>
+                <a class="cart__item-btn btn" href="#">BUY now</a>
+                <p class="cart__item-pretitle">ПРОМОКОД:</p>
+                <div class="cart__item-input">
+                    <input type="text">
+                    <button class="btn">activate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">FAQ</a>
+                <a class="footer__item-link link" href="#">Rules</a>
+                <a class="footer__item-link link" href="#">Payments</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">SUPPORT</a>
+                <a class="footer__item-link link" href="#">SITEMAP</a>
+                <a class="footer__item-link link" href="#">LEGAL</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__item-link link" href="#">INSTAGRAM</a>
+                <a class="footer__item-link link" href="#">YOUTUBE</a>
+                <a class="footer__item-link link" href="#">ANDROID APP</a>
+            </div>
+
+            <div class="footer__item">
+                <a class="footer__logo logo" href="#">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <p class="footer__item-desc">2023</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>
