@@ -1683,24 +1683,22 @@ nav {
   width: 140%;
 }
 
-.cart {
-  background-image: url(../img/cart-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.cart__body {
+  background: -o-linear-gradient(320deg, #1F242A 0%, #1F242A 100%);
+  background: linear-gradient(130deg, #1F242A 0%, #1F242A 100%);
 }
 
 .cart__wrapper {
   padding: 50px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px 80px;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px 30px;
 }
 
 .cart__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px 30px;
+  gap: 30px 15px;
 }
 
 .cart__list a {
@@ -1719,6 +1717,41 @@ nav {
   background-position: center;
   font-family: "Raleway", sans-serif;
   color: #ECEFF4;
+  position: relative;
+}
+
+.cart__list-item::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  right: -10px;
+  bottom: -10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #FD3796;
+  background-image: url(../img/x.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+
+.cart__list-item::after:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background-size: 13px;
 }
 
 .cart__list-name {
@@ -1766,7 +1799,8 @@ nav {
 }
 
 .cart__item-title {
-  font-size: 60px;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1803,6 +1837,7 @@ nav {
 }
 
 .cart__item-pretitle {
+  font-family: "Neue Machina", sans-serif;
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2054,10 +2089,6 @@ nav {
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15);
-  }
-
-  .cart__wrapper {
-    grid-template-columns: 1fr;
   }
 
   .footer__wrapper {
@@ -2485,6 +2516,10 @@ nav {
 
   .cart-empty__btn-text {
     font-size: 17px;
+  }
+
+  .cart__wrapper {
+    grid-template-columns: 1fr;
   }
 
   .cart__item-title {
