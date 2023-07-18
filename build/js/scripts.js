@@ -138,25 +138,51 @@ const swiperGame2 = new Swiper('.swiper__games-2', {
 
 // DROPDOWN
 
-var mainButtons = document.getElementsByClassName("dropdown__btn");
-var buttonContainers = document.getElementsByClassName("dropdown__body");
-var dynamicButtons = document.getElementsByClassName("dropdown__item");
+var dropdownButtons = document.getElementsByClassName("dropdown__btn");
+var dropdownContainers = document.getElementsByClassName("dropdown__body");
 
-for (var i = 0; i < mainButtons.length; i++) {
-    mainButtons[i].addEventListener("click", function() {
-        var container = this.nextElementSibling;
-        container.style.display = "block";
+// Закрытие всех открытых dropdown'ов при клике вне области
+document.addEventListener("click", function(event) {
+  for (var i = 0; i < dropdownContainers.length; i++) {
+    var container = dropdownContainers[i];
+    var button = dropdownButtons[i];
+    if (!container.contains(event.target) && !button.contains(event.target)) {
+      container.classList.remove("show");
+    }
+  }
+});
+
+// Открытие/закрытие dropdown'a при клике на кнопку
+for (var i = 0; i < dropdownButtons.length; i++) {
+  (function(index) {
+    var button = dropdownButtons[index];
+    var container = dropdownContainers[index];
+    button.addEventListener("click", function() {
+      container.classList.toggle("show");
     });
+  })(i);
 }
 
+// Замена текста в главной кнопке и закрытие dropdown'a
 function replaceMainButton(button, containerIndex) {
-    var container = buttonContainers[containerIndex - 1];
-    var mainButton = container.previousElementSibling;
-    mainButton.innerHTML = button.innerHTML;
-    container.style.display = "none";
+  var container = dropdownContainers[containerIndex - 1];
+  var mainButton = container.previousElementSibling;
+  mainButton.innerHTML = button.innerHTML;
+  container.classList.remove("show");
 }
 
-// Set the first buttons as selected initially
-replaceMainButton(dynamicButtons[0], '1');
-// replaceMainButton(dynamicButtons[0], '2');
+// Set initial selected items
+var initialItems = document.getElementsByClassName("dropdown__item");
+for (var i = 0; i < initialItems.length; i++) {
+  var dropdown = initialItems[i].closest(".dropdown");
+  var mainButton = dropdown.querySelector(".dropdown__btn");
+  mainButton.innerHTML = initialItems[i].innerHTML;
+}
 
+// Set first item as selected
+for (var i = 0; i < dropdownButtons.length; i++) {
+  var container = dropdownContainers[i];
+  var firstItem = container.firstElementChild;
+  var mainButton = container.previousElementSibling;
+  mainButton.innerHTML = firstItem.innerHTML;
+}

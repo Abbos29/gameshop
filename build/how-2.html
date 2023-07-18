@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
-<body class="main__body how-2">
+<body class="main__body">
     
 <!-- Header -->
 <header class="header">
@@ -37,31 +37,52 @@
                 </ul>
 
                 <div class="navbar__inner">
-                    <a class="navbar__dollar" href="#">
-                        <img src="./img/$.svg" alt="dollar">
-                    </a>
                     
                     <div class="dropdown">
-                        <button class="dropdown__btn">Кнопка</button>
+                        <button class="dropdown__btn">KURS</button>
                         
                         <div class="dropdown__body">
                             <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/$.svg" alt="dollar">
+                                RUB
+                            </button>
+                            
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/$.svg" alt="dollar">
+                                USD
+                            </button>
+                            
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                                <img src="./img/$.svg" alt="dollar">
+                                EUR
+                            </button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown__btn">LANG</button>
+                        
+                        <div class="dropdown__body">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '2')">
                                 <img src="./img/flag-1.png" alt="flag">
                                 RU
                             </button>
                             
-                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '2')">
                                 <img src="./img/flag-1.png" alt="flag">
                                 EN
                             </button>
                             
-                            <button class="dropdown__item" onclick="replaceMainButton(this, '1')">
+                            <button class="dropdown__item" onclick="replaceMainButton(this, '2')">
                                 <img src="./img/flag-1.png" alt="flag">
                                 PL
                             </button>
                             
                         </div>
                     </div>
+
+        
 
                 </div>
 
@@ -85,7 +106,7 @@
 </header>
 
 <!-- Main Page -->
-<main>
+<main class="how-2">
 
 <!-- Hero-11 -->
 <section class="hero-1 hero-2">

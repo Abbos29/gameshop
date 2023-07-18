@@ -331,6 +331,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #01D560;
 }
 
+.dropdown__body {
+  display: none;
+}
+
+.dropdown__body.show {
+  display: block;
+}
+
 .dropdown__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,6 +352,10 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   color: #959DAE;
   cursor: pointer;
+}
+
+.dropdown__btn img {
+  width: 18px !important;
 }
 
 .dropdown__body {
@@ -398,6 +410,10 @@ body::-webkit-scrollbar-thumb {
 
 .dropdown__item:hover {
   background: #89898D;
+}
+
+.dropdown__item img {
+  width: 18px !important;
 }
 
 html {
@@ -463,7 +479,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 5px 0;
+  padding: 10px 0;
   gap: 20px;
 }
 
