@@ -185,7 +185,7 @@ section {
 .btn {
   font-family: "Neue Machina", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   width: auto;
   text-transform: lowercase;
@@ -714,7 +714,33 @@ nav {
 }
 
 .hero__btn {
-  margin-top: 20px;
+  font-size: 18px;
+  padding: 12px 30px;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero__btn:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.hero__btn.green {
+  background: -o-linear-gradient(308deg, #4AEF68 0%, #249439 100%);
+  background: linear-gradient(142deg, #4AEF68 0%, #249439 100%);
+}
+
+.hero__btn.blue {
+  background: -o-linear-gradient(308deg, #456EDA 0%, #305FDA 100%);
+  background: linear-gradient(142deg, #456EDA 0%, #305FDA 100%);
+}
+
+.hero__btn.orange {
+  background: -o-linear-gradient(200deg, #1C2838 0%, #1C2838 100%);
+  background: linear-gradient(250deg, #1C2838 0%, #1C2838 100%);
 }
 
 .hero__img img {
@@ -2711,7 +2737,6 @@ nav {
   }
 
   .hero__btn {
-    margin-top: 20px;
     max-width: 100%;
     width: 100%;
   }

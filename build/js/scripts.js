@@ -124,10 +124,10 @@ const swiperGame2 = new Swiper('.swiper__games-2', {
   
   breakpoints: {
     1450: {
-      slidesPerView: 3,
-    },
-    768: {
       slidesPerView: 2,
+    },
+    1390: {
+      slidesPerView: 1,
     }
   }
 });
