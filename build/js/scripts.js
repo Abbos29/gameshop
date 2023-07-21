@@ -120,14 +120,16 @@ const swiperGame2 = new Swiper('.swiper__games-2', {
   // centeredSlides: true,
   // grabCursor: true,
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 140,
   
   breakpoints: {
     1450: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      spaceBetween: 120,
     },
     1390: {
       slidesPerView: 1,
+      spaceBetween: 300,
     }
   }
 });
