@@ -1457,6 +1457,12 @@ nav {
   background: linear-gradient(90deg, #FFF 0%, #FFF 100%);
 }
 
+.new__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
 .new {
   border-top: 1px solid #fff;
   padding: 100px 0;
@@ -1614,18 +1620,41 @@ nav {
   margin: 0 auto;
   position: relative;
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .games__search input {
   border-radius: 12px;
-  border: 1px solid #E5E5E5;
-  background: #FFF;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #000;
   max-width: 1000px;
   width: 100%;
   padding: 15px 30px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
+}
+
+#filter {
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .games-1 {
@@ -2667,6 +2696,10 @@ nav {
   .hero-1__how-icon {
     width: 70px;
     height: 70px;
+  }
+
+  .new__grid {
+    grid-template-columns: 1fr;
   }
 
   .new {
